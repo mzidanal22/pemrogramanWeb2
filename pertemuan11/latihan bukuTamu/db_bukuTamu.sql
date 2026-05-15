@@ -1,0 +1,13 @@
+sql
+CREATE DATABASE db_bukutamu;
+
+USE db_bukutamu;
+
+CREATE TABLE buku_tamu (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    nama VARCHAR(100) NOT NULL,
+    email VARCHAR(100) NOT NULL,
+    pesan TEXT NOT NULL,
+    tanggal TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
+
