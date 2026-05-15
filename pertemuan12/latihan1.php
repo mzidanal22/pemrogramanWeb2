@@ -1,13 +1,18 @@
 <?php
-    $con = mysql_connect("localhost","root","");
-    if (!$con){
-        die('Could not connect: ' . mysql_error());
-    }
 
-    mysql_select_db("lat_dbase", $con);
+$con = mysqli_connect("localhost", "root", "", "lat_dbase");
 
-    mysql_query("UPDATE tbl_mhs SET Age = '36'
-    WHERE FirstName = 'Karina' AND LastName = 'Suwandi'");
+if (!$con) {
+    die("Connection failed: " . mysqli_connect_error());
+}
 
-    mysql_close($con);
+mysqli_query($con, "
+    UPDATE tbl_mhs 
+    SET Age = '36'
+    WHERE FirstName = 'Karina' 
+    AND LastName = 'Swandi'
+");
+
+mysqli_close($con);
+
 ?>

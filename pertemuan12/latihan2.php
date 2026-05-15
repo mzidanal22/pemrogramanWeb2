@@ -1,12 +1,12 @@
 <?php
-    $con = mysql_connect("localhost","root","");
+    $con = mysqli_connect("localhost","root","");
     if (!$con){
-        die('Could not connect: ' . mysql_error());
+        die('Could not connect: ' . mysqli_connect_error());
     }
 
-    mysql_select_db("lat_dbase", $con);
+    mysqli_select_db($con, "lat_dbase");
 
-    mysql_query("DELETE FROM tbl_mhs WHERE LastName='Prabowo'");
+    mysqli_query($con, "DELETE FROM tbl_mhs WHERE LastName='Prabowo'");
 
-    mysql_close($con);
+    mysqli_close($con);
 ?>
