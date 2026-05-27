@@ -20,7 +20,7 @@ if (isset($_COOKIE['namalengkap'])) {
 
 }
 
-echo "<h2>Klik <a href='cookie1.php'>di sini</a> untuk penciptaan cookies</h2>";
-echo "<h2>Klik <a href='cookie3.php'>di sini</a> untuk penghapusan cookies</h2>";
+echo "<h2>Klik <a href='cookies1.php'>di sini</a> untuk penciptaan cookies</h2>";
+echo "<h2>Klik <a href='cookies3.php'>di sini</a> untuk penghapusan cookies</h2>";
 
 ?>
