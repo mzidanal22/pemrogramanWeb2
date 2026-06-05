@@ -21,7 +21,7 @@ if (!$result) {
 }
 
 while ($row = mysqli_fetch_assoc($result)) {
-    echo $row['nama'] . "<br>";
+    echo $row['nama_pemesan'] . "<br>";
 }
 
 ?>
