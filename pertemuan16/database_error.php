@@ -12,7 +12,7 @@ if (!$conn) {
 }
 
 // sengaja salah nama tabel
-$sql = "SELECT * FROM mahasiswaa";
+$sql = "SELECT * FROM tbpenjualan";
 
 $result = mysqli_query($conn, $sql);
 
