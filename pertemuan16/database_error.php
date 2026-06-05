@@ -1,27 +1,30 @@
 <?php
 
-$conn = mysqli_connect(
-    "localhost",
-    "root",
-    "",
-    "dbpenjualanrumah"
-);
+mysqli_report(MYSQLI_REPORT_OFF);
 
-if (!$conn) {
-    die("Koneksi gagal: " . mysqli_connect_error());
-}
+try {
 
-// sengaja salah nama tabel
-$sql = "SELECT * FROM tbpenjualan";
+    $conn = @mysqli_connect(
+        "localhost",
+        "root",
+        "",
+        "database_tidak_ada"
+    );
 
-$result = mysqli_query($conn, $sql);
+    if (!$conn) {
+        throw new Exception(mysqli_connect_error());
+    }
 
-if (!$result) {
-    die("Error Query: " . mysqli_error($conn));
-}
+    echo "Koneksi berhasil";
 
-while ($row = mysqli_fetch_assoc($result)) {
-    echo $row['nama_pemesan'] . "<br>";
+} catch (Exception $e) {
+
+    echo "Terjadi Error Database: " . $e->getMessage();
+
+} finally {
+
+    echo "<br>Program selesai dijalankan.";
+
 }
 
 ?>
