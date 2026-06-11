@@ -1,3 +1,9 @@
+<?php
+
+$a = 10;
+
+?>
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -8,10 +14,14 @@
 <div class="container">
 <div class="card">
 
-<h1>🎉 Upload Berhasil</h1>
+<h1>✅ Solusi Undefined Variable</h1>
+
+<div class="code">
+$a = 10;
+</div>
 
 <div class="success">
-File berhasil diupload dan pengguna dialihkan menggunakan header().
+Variabel berhasil didefinisikan.
 </div>
 
 <a href="index.php" class="btn">

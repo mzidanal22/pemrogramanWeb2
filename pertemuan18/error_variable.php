@@ -1,14 +1,29 @@
-<?php
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
 
-$a = 10;
+<div class="container">
+<div class="card">
 
+<h1>📌 Undefined Variable</h1>
+
+<div class="code">
 if($a > 0)
-{
-    $pesan = "Nilai A Positif";
-}
+</div>
 
-?>
+<div class="error">
+Notice : Undefined Variable $a
+</div>
 
-<h2><?= $pesan ?></h2>
+<a href="solusi_variable.php" class="btn">
+Lihat Solusi
+</a>
 
-<a href="index.php">Kembali</a>
+</div>
+</div>
+
+</body>
+</html>

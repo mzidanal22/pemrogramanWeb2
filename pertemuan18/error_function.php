@@ -1,13 +1,32 @@
-<?php
+<!DOCTYPE html>
+<html>
+<head>
+<title>Undefined Function</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
 
-include "function.php";
+<div class="container">
+<div class="card">
 
-$hasil = jumlah(20,30);
+<h1>🔧 Undefined Function</h1>
 
-?>
+<h2>Kode Salah</h2>
 
-<h2>Hasil Penjumlahan</h2>
+<div class="code">
+echo jumlah(5,5);
+</div>
 
-<p><?= $hasil ?></p>
+<div class="error">
+Fatal Error : Call to undefined function jumlah()
+</div>
 
-<a href="index.php">Kembali</a>
+<a href="solusi_function.php" class="btn">
+Lihat Solusi
+</a>
+
+</div>
+</div>
+
+</body>
+</html>

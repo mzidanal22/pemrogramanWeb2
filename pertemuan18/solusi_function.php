@@ -1,3 +1,11 @@
+<?php
+
+include "function.php";
+
+$hasil = jumlah(10,20);
+
+?>
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -8,10 +16,14 @@
 <div class="container">
 <div class="card">
 
-<h1>🎉 Upload Berhasil</h1>
+<h1>✅ Solusi Undefined Function</h1>
+
+<div class="code">
+include "function.php";
+</div>
 
 <div class="success">
-File berhasil diupload dan pengguna dialihkan menggunakan header().
+Hasil Penjumlahan = <?= $hasil ?>
 </div>
 
 <a href="index.php" class="btn">
